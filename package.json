@@ -1,5 +1,7 @@
 {
   "name": "@eliassko/logger",
+  "type": "module",
+  "sideEffects": false,
   "version": "1.0.0",
   "description": "Configurable logger library",
   "main": "index.js",
