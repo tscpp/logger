@@ -20,7 +20,7 @@ export class Logger {
 
   onLog(listener: (log: Log) => void, filter?: LogLevel) {
     const callback = (log: Log) => {
-      if (filter && log.level < filter) {
+      if (filter && log.level > filter) {
         return;
       }
       listener(log);
