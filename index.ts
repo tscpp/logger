@@ -32,30 +32,30 @@ export class Logger {
     };
   }
 
-  #write(log: Log) {
+  log(log: Log) {
     for (const callback of this.#callbacks) {
       callback(log);
     }
   }
 
   debug(...data: unknown[]) {
-    return this.#write({ text: format(data), level: LogLevel.Debug });
+    return this.log({ text: format(data), level: LogLevel.Debug });
   }
 
   verbose(...data: unknown[]) {
-    return this.#write({ text: format(data), level: LogLevel.Verbose });
+    return this.log({ text: format(data), level: LogLevel.Verbose });
   }
 
   info(text: string) {
-    return this.#write({ text, level: LogLevel.Info });
+    return this.log({ text, level: LogLevel.Info });
   }
 
   warn(text: string) {
-    return this.#write({ text, level: LogLevel.Warning });
+    return this.log({ text, level: LogLevel.Warning });
   }
 
   error(text: string) {
-    return this.#write({ text, level: LogLevel.Error });
+    return this.log({ text, level: LogLevel.Error });
   }
 
   fatal(text: string): never {
