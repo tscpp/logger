@@ -1,27 +1,27 @@
 {
   "name": "@eliassko/logger",
-  "type": "module",
-  "sideEffects": false,
   "version": "1.0.0",
   "description": "Configurable logger library",
-  "main": "index.js",
+  "homepage": "https://github.com/tscpp/logger#readme",
+  "bugs": {
+    "url": "https://github.com/tscpp/logger/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tscpp/logger.git"
   },
-  "scripts": {
-    "build": "tsc"
-  },
-  "author": "Elias Skogevall",
   "license": "MIT",
+  "author": "Elias Skogevall",
+  "sideEffects": false,
+  "type": "module",
+  "main": "index.js",
   "files": [
     "index.js",
     "index.d.ts"
   ],
-  "bugs": {
-    "url": "https://github.com/tscpp/logger/issues"
+  "scripts": {
+    "build": "tsc"
   },
-  "homepage": "https://github.com/tscpp/logger#readme",
   "dependencies": {
     "chalk": "^5.3.0",
     "object-inspect": "^1.13.2"
