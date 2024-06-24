@@ -1,6 +1,6 @@
 {
   "name": "@eliassko/logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Configurable logger library",
   "homepage": "https://github.com/tscpp/logger#readme",
   "bugs": {
