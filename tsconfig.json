@@ -1,0 +1,9 @@
+{
+  "extends": "@tsconfig/strictest",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "declaration": true
+  }
+}
